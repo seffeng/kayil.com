@@ -348,9 +348,8 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  height: 301px;
+  height: 100%;
   background: url("images/banner.jpg") center #000;
-  background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
