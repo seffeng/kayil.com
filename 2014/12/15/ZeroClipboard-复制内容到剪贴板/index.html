@@ -3,17 +3,29 @@
 <head>
   <meta charset="utf-8">
   
-  <title>2009-11-14 | 峰雪幽忧 -- kayil.com</title>
+  <title>ZeroClipboard 复制内容到剪贴板 | 峰雪幽忧 -- kayil.com</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="棋盘上的兵卒走一步算一步下一步即使是错误也没有回头路我愿意结束成全你的幸福爱已结束就不要虚伪的祝福">
+  <meta name="description" content="1.引入文件
+12&lt;script type='text/javascript' src='/static/js/jquery.min.js'&gt;&lt;/script&gt;&lt;script type='text/javascript' src='/static/js/ZeroClipboard.min.js'&gt;&lt;/script&gt;
+
+2.复制按键
+123456&lt">
 <meta property="og:type" content="article">
-<meta property="og:title" content="2009-11-14">
-<meta property="og:url" content="http://kayil.com/2014/11/18/2009-11-14/">
+<meta property="og:title" content="ZeroClipboard 复制内容到剪贴板">
+<meta property="og:url" content="http://kayil.com/2014/12/15/ZeroClipboard-复制内容到剪贴板/">
 <meta property="og:site_name" content="峰雪幽忧 -- kayil.com">
-<meta property="og:description" content="棋盘上的兵卒走一步算一步下一步即使是错误也没有回头路我愿意结束成全你的幸福爱已结束就不要虚伪的祝福">
+<meta property="og:description" content="1.引入文件
+12&lt;script type='text/javascript' src='/static/js/jquery.min.js'&gt;&lt;/script&gt;&lt;script type='text/javascript' src='/static/js/ZeroClipboard.min.js'&gt;&lt;/script&gt;
+
+2.复制按键
+123456&lt">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="2009-11-14">
-<meta name="twitter:description" content="棋盘上的兵卒走一步算一步下一步即使是错误也没有回头路我愿意结束成全你的幸福爱已结束就不要虚伪的祝福">
+<meta name="twitter:title" content="ZeroClipboard 复制内容到剪贴板">
+<meta name="twitter:description" content="1.引入文件
+12&lt;script type='text/javascript' src='/static/js/jquery.min.js'&gt;&lt;/script&gt;&lt;script type='text/javascript' src='/static/js/ZeroClipboard.min.js'&gt;&lt;/script&gt;
+
+2.复制按键
+123456&lt">
 
   
   <meta name="baidu-site-verification" content="PhQawcNsUr" />
@@ -73,14 +85,14 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="post-2009-11-14" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-ZeroClipboard-复制内容到剪贴板" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2014/11/18/2009-11-14/" class="article-date">
-  <time datetime="2014-11-18T11:40:20.000Z" itemprop="datePublished">Nov 18 2014</time>
+    <a href="/2014/12/15/ZeroClipboard-复制内容到剪贴板/" class="article-date">
+  <time datetime="2014-12-15T08:24:44.000Z" itemprop="datePublished">Dec 15 2014</time>
 </a>
     
   <div class="article-category">
-    <a class="article-category-link" href="/categories/流浪的风/">流浪的风</a>
+    <a class="article-category-link" href="/categories/javascript/">javascript</a>
   </div>
 
   </div>
@@ -91,7 +103,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      2009-11-14
+      ZeroClipboard 复制内容到剪贴板
     </h1>
   
 
@@ -99,15 +111,23 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>棋盘上的兵卒<br>走一步算一步<br>下一步即使是错误<br>也没有回头路<br>我愿意结束<br>成全你的幸福<br>爱已结束<br>就不要虚伪的祝福</p>
+        <p>1.引入文件</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">&lt;script <span class="built_in">type</span>=<span class="string">"text/javascript"</span> src=<span class="string">"/static/js/jquery.min.js"</span>&gt;&lt;/script&gt;</div><div class="line">&lt;script <span class="built_in">type</span>=<span class="string">"text/javascript"</span> src=<span class="string">"/static/js/ZeroClipboard.min.js"</span>&gt;&lt;/script&gt;</div></pre></td></tr></table></figure>
+
+<p>2.复制按键</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">&lt;!-- data-clipboard-target 复制此ID对应的内容 --&gt;</div><div class="line">&lt;input <span class="built_in">type</span>=<span class="string">"text"</span> id=<span class="string">"fe_text"</span> name=<span class="string">"fe_text"</span> value=<span class="string">"copy_me"</span> /&gt;</div><div class="line">&lt;span id=<span class="string">"btn-copy_1"</span> data-clipboard-target=<span class="string">"fe_text"</span> data-clipboard-text=<span class="string">"test_1"</span>&gt;复制&lt;/span&gt;</div><div class="line">&lt;!-- data-clipboard-text 默认复制的内容 --&gt;</div><div class="line">&lt;span id=<span class="string">"btn-copy_2"</span> data-clipboard-text=<span class="string">"test_2"</span>&gt;复制&lt;/span&gt;</div><div class="line">&lt;span id=<span class="string">"btn-copy_10"</span> data-clipboard-text=<span class="string">"test_10"</span>&gt;复制&lt;/span&gt;</div></pre></td></tr></table></figure>
+
+<p>3.javascript</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div></pre></td><td class="code"><pre><div class="line">&lt;script&gt;</div><div class="line">$(document).ready(<span class="function"><span class="title">function</span></span>(){</div><div class="line">    //<span class="number">1</span>.x IE7+</div><div class="line">    $(<span class="string">'span[id^="btn-copy"]'</span>).each(<span class="function"><span class="title">function</span></span>(){</div><div class="line">        var _id = $(this).attr(<span class="string">'id'</span>);</div><div class="line">        var client = new ZeroClipboard(document.getElementById(_id), {moviePath: <span class="string">"/static/js/ZeroClipboard.swf"</span>});</div><div class="line">        client.on(<span class="string">"load"</span>, function(client) {</div><div class="line">            client.on(<span class="string">"complete"</span>, function(client, args){</div><div class="line">                alert(<span class="string">"复制成功: "</span> + args.text);</div><div class="line">            });</div><div class="line">        });</div><div class="line">    });</div><div class="line">    //<span class="number">2</span>.x IE9+</div><div class="line">    $(<span class="string">'span[id^="btn-copy"]'</span>).each(<span class="function"><span class="title">function</span></span>(){</div><div class="line">        var _id = $(this).attr(<span class="string">'id'</span>);</div><div class="line">        var client = new ZeroClipboard(document.getElementById(_id));</div><div class="line">        client.on(<span class="string">"ready"</span>, function(readyEvent){</div><div class="line">            client.on(<span class="string">"aftercopy"</span>, function(event){</div><div class="line">                alert(<span class="string">"复制成功: "</span> + event.data[<span class="string">"text/plain"</span>]);</div><div class="line">            });</div><div class="line">        });</div><div class="line">    });</div><div class="line">});</div><div class="line">&lt;/script&gt;</div></pre></td></tr></table></figure>
+
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://kayil.com/2014/11/18/2009-11-14/" data-id="g08z7arn74dfv8xd" class="article-share-link">Share</a>
+      <a data-url="http://kayil.com/2014/12/15/ZeroClipboard-复制内容到剪贴板/" data-id="3z351p5oypdr9whc" class="article-share-link">Share</a>
       
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/流浪的风/">流浪的风</a></li></ul>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/javascript/">javascript</a></li></ul>
 
     </footer>
   </div>
@@ -115,19 +135,10 @@
     
 <nav id="article-nav">
   
-    <a href="/2014/11/21/ESXi5-ssh-重启虚拟机/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          ESXi5 ssh 重启虚拟机
-        
-      </div>
-    </a>
   
-  
-    <a href="/2014/11/18/2011-02-03/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2014/12/15/autocomplete-输入提示/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">2011-02-03</div>
+      <div class="article-nav-title">autocomplete 输入提示</div>
     </a>
   
 </nav>
@@ -138,7 +149,7 @@
 
   <section id="comments">
     <!-- 多说评论框 start -->
-    <div class="ds-thread" data-thread-key="post-2009-11-14" data-title="2009-11-14" data-url="http://kayil.com/2014/11/18/2009-11-14/"></div>
+    <div class="ds-thread" data-thread-key="post-ZeroClipboard-复制内容到剪贴板" data-title="ZeroClipboard 复制内容到剪贴板" data-url="http://kayil.com/2014/12/15/ZeroClipboard-复制内容到剪贴板/"></div>
     <!-- 多说评论框 end -->
     <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
     <script type="text/javascript">
