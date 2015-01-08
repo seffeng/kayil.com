@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Archives: 2014 | 峰雪幽忧 -- kayil.com</title>
+  <title>峰雪幽忧 -- kayil.com</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="kayil.com,域名出售,domain sale">
 <meta property="og:type" content="website">
 <meta property="og:title" content="峰雪幽忧 -- kayil.com">
-<meta property="og:url" content="http://kayil.com/archives/2014/">
+<meta property="og:url" content="http://kayil.com/page/2/">
 <meta property="og:site_name" content="峰雪幽忧 -- kayil.com">
 <meta property="og:description" content="kayil.com,域名出售,domain sale">
 <meta name="twitter:card" content="summary">
@@ -74,108 +74,6 @@
 </header>
       <div class="outer">
         <section id="main">
-  
-    <article id="post-ZeroClipboard-复制内容到剪贴板" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2014/12/15/ZeroClipboard-复制内容到剪贴板/" class="article-date">
-  <time datetime="2014-12-15T08:24:44.000Z" itemprop="datePublished">Dec 15 2014</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/javascript/">javascript</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2014/12/15/ZeroClipboard-复制内容到剪贴板/">ZeroClipboard 复制内容到剪贴板</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>1.引入文件</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">&lt;script <span class="built_in">type</span>=<span class="string">"text/javascript"</span> src=<span class="string">"/static/js/jquery.min.js"</span>&gt;&lt;/script&gt;</div><div class="line">&lt;script <span class="built_in">type</span>=<span class="string">"text/javascript"</span> src=<span class="string">"/static/js/ZeroClipboard.min.js"</span>&gt;&lt;/script&gt;</div></pre></td></tr></table></figure>
-
-<p>2.复制按键</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">&lt;!-- data-clipboard-target 复制此ID对应的内容 --&gt;</div><div class="line">&lt;input <span class="built_in">type</span>=<span class="string">"text"</span> id=<span class="string">"fe_text"</span> name=<span class="string">"fe_text"</span> value=<span class="string">"copy_me"</span> /&gt;</div><div class="line">&lt;span id=<span class="string">"btn-copy_1"</span> data-clipboard-target=<span class="string">"fe_text"</span> data-clipboard-text=<span class="string">"test_1"</span>&gt;复制&lt;/span&gt;</div><div class="line">&lt;!-- data-clipboard-text 默认复制的内容 --&gt;</div><div class="line">&lt;span id=<span class="string">"btn-copy_2"</span> data-clipboard-text=<span class="string">"test_2"</span>&gt;复制&lt;/span&gt;</div><div class="line">&lt;span id=<span class="string">"btn-copy_10"</span> data-clipboard-text=<span class="string">"test_10"</span>&gt;复制&lt;/span&gt;</div></pre></td></tr></table></figure>
-
-<p>3.javascript</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div></pre></td><td class="code"><pre><div class="line">&lt;script&gt;</div><div class="line">$(document).ready(<span class="function"><span class="title">function</span></span>(){</div><div class="line">    //<span class="number">1</span>.x IE7+</div><div class="line">    $(<span class="string">'span[id^="btn-copy"]'</span>).each(<span class="function"><span class="title">function</span></span>(){</div><div class="line">        var _id = $(this).attr(<span class="string">'id'</span>);</div><div class="line">        var client = new ZeroClipboard(document.getElementById(_id), {moviePath: <span class="string">"/static/js/ZeroClipboard.swf"</span>});</div><div class="line">        client.on(<span class="string">"load"</span>, function(client) {</div><div class="line">            client.on(<span class="string">"complete"</span>, function(client, args){</div><div class="line">                alert(<span class="string">"复制成功: "</span> + args.text);</div><div class="line">            });</div><div class="line">        });</div><div class="line">    });</div><div class="line">    //<span class="number">2</span>.x IE9+</div><div class="line">    $(<span class="string">'span[id^="btn-copy"]'</span>).each(<span class="function"><span class="title">function</span></span>(){</div><div class="line">        var _id = $(this).attr(<span class="string">'id'</span>);</div><div class="line">        var client = new ZeroClipboard(document.getElementById(_id));</div><div class="line">        client.on(<span class="string">"ready"</span>, function(readyEvent){</div><div class="line">            client.on(<span class="string">"aftercopy"</span>, function(event){</div><div class="line">                alert(<span class="string">"复制成功: "</span> + event.data[<span class="string">"text/plain"</span>]);</div><div class="line">            });</div><div class="line">        });</div><div class="line">    });</div><div class="line">});</div><div class="line">&lt;/script&gt;</div></pre></td></tr></table></figure>
-
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://kayil.com/2014/12/15/ZeroClipboard-复制内容到剪贴板/" data-id="7iktopwx4vcti3pl" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/javascript/">javascript</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-autocomplete-输入提示" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2014/12/15/autocomplete-输入提示/" class="article-date">
-  <time datetime="2014-12-15T08:23:51.000Z" itemprop="datePublished">Dec 15 2014</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/javascript/">javascript</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2014/12/15/autocomplete-输入提示/">autocomplete 输入提示</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>1.引入文件</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">&lt;script <span class="built_in">type</span>=<span class="string">"text/javascript"</span> src=<span class="string">"/static/plugins/jquery-ui/jquery-ui.min.js"</span>&gt;&lt;/script&gt;</div><div class="line">&lt;link rel=<span class="string">"stylesheet"</span> href=<span class="string">"/static/plugins/jquery-ui/jquery-ui.min.css"</span>&gt;</div><div class="line">&lt;style <span class="built_in">type</span>=<span class="string">"text/css"</span>&gt;</div><div class="line">    /*显示滚动条，默认高度<span class="number">300</span>px*/</div><div class="line">    .ui-autocomplete{max-height: <span class="number">300</span>px; overflow-y: auto; overflow-x: hidden;}</div><div class="line">&lt;/style&gt;</div></pre></td></tr></table></figure>
-
-<p>2.输入文本框</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;input id=<span class="string">"input_key"</span> name=<span class="string">"input_key"</span> <span class="built_in">type</span>=<span class="string">"text"</span> value=<span class="string">""</span>&gt;</div></pre></td></tr></table></figure>
-
-<p>3.javascript</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">&lt;script&gt;</div><div class="line">    var _data = [<span class="string">'abc'</span>, <span class="string">'bcd'</span>];    //提示数据；Object or Array</div><div class="line">    $(<span class="string">'#input_key'</span>).autocomplete({</div><div class="line">        <span class="built_in">source</span>: _data,</div><div class="line">        minLength: <span class="number">0</span>,  //无输入也提示，<span class="number">1</span>-输入<span class="number">1</span>个字时提示......</div><div class="line">        scroll: <span class="literal">true</span>,</div><div class="line">        scrollHeight: <span class="number">10</span>,</div><div class="line">        create: function(e, ui){</div><div class="line">            $(this).bind(<span class="string">'click'</span>, <span class="function"><span class="title">function</span></span>(){  //文件框获取焦点即时提示，</div><div class="line">                $(this).autocomplete(<span class="string">'search'</span>, <span class="string">''</span>);</div><div class="line">            });</div><div class="line">        },</div><div class="line">    });</div><div class="line">&lt;/script&gt;</div></pre></td></tr></table></figure>
-
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://kayil.com/2014/12/15/autocomplete-输入提示/" data-id="qnidrhm36q48f28k" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/javascript/">javascript</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
   
     <article id="post-ESXi5-ssh-重启虚拟机" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
@@ -492,6 +390,10 @@ Vmid   <span class="keyword">Name</span>                <span class="keyword">Fi
 
 
   
+  
+    <nav id="page-nav">
+      <a class="extend prev" rel="prev" href="/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
+    </nav>
   
 </section>
         

@@ -3,17 +3,20 @@
 <head>
   <meta charset="utf-8">
   
-  <title>2011-05-11 | 峰雪幽忧 -- kayil.com</title>
+  <title>修改计算机名 | 峰雪幽忧 -- kayil.com</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="你习惯地寻求他的帮助理所当然忽略我的孤独你的日记写满他的好处而我像个小孩等你照顾你的赌局我该怎么下注孤注一掷由你决定赢输我会小心学着你的脚步自己和自己影子追逐假装不在乎　你说结束">
+  <meta name="description" content="1.新建文本文件，编辑内容
+12345set name=test-%date:~2,2%%date:~5,2%%date:~8,2%%time:~0,2%%time:~3,2%%time:~6,2%            #设置计算机名变量wmic computersystem where 'name='%computername%'' call rename '%name%'">
 <meta property="og:type" content="article">
-<meta property="og:title" content="2011-05-11">
-<meta property="og:url" content="http://kayil.com/2014/11/18/2011-05-11/">
+<meta property="og:title" content="修改计算机名">
+<meta property="og:url" content="http://kayil.com/2015/01/08/修改计算机名/">
 <meta property="og:site_name" content="峰雪幽忧 -- kayil.com">
-<meta property="og:description" content="你习惯地寻求他的帮助理所当然忽略我的孤独你的日记写满他的好处而我像个小孩等你照顾你的赌局我该怎么下注孤注一掷由你决定赢输我会小心学着你的脚步自己和自己影子追逐假装不在乎　你说结束">
+<meta property="og:description" content="1.新建文本文件，编辑内容
+12345set name=test-%date:~2,2%%date:~5,2%%date:~8,2%%time:~0,2%%time:~3,2%%time:~6,2%            #设置计算机名变量wmic computersystem where 'name='%computername%'' call rename '%name%'">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="2011-05-11">
-<meta name="twitter:description" content="你习惯地寻求他的帮助理所当然忽略我的孤独你的日记写满他的好处而我像个小孩等你照顾你的赌局我该怎么下注孤注一掷由你决定赢输我会小心学着你的脚步自己和自己影子追逐假装不在乎　你说结束">
+<meta name="twitter:title" content="修改计算机名">
+<meta name="twitter:description" content="1.新建文本文件，编辑内容
+12345set name=test-%date:~2,2%%date:~5,2%%date:~8,2%%time:~0,2%%time:~3,2%%time:~6,2%            #设置计算机名变量wmic computersystem where 'name='%computername%'' call rename '%name%'">
 
   
   <meta name="baidu-site-verification" content="PhQawcNsUr" />
@@ -73,14 +76,14 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="post-2011-05-11" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-修改计算机名" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2014/11/18/2011-05-11/" class="article-date">
-  <time datetime="2014-11-18T11:39:47.000Z" itemprop="datePublished">Nov 18 2014</time>
+    <a href="/2015/01/08/修改计算机名/" class="article-date">
+  <time datetime="2015-01-08T06:03:16.000Z" itemprop="datePublished">Jan 8 2015</time>
 </a>
     
   <div class="article-category">
-    <a class="article-category-link" href="/categories/流浪的风/">流浪的风</a>
+    <a class="article-category-link" href="/categories/windows/">windows</a>
   </div>
 
   </div>
@@ -91,7 +94,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      2011-05-11
+      修改计算机名
     </h1>
   
 
@@ -99,15 +102,18 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>你习惯地寻求他的帮助<br>理所当然忽略我的孤独<br>你的日记写满他的好处<br>而我像个小孩等你照顾<br>你的赌局我该怎么下注<br>孤注一掷由你决定赢输<br>我会小心学着你的脚步<br>自己和自己影子追逐<br>假装不在乎　你说结束</p>
+        <p>1.新建文本文件，编辑内容</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">set</span> name=test-%date:~<span class="number">2</span>,<span class="number">2</span>%%date:~<span class="number">5</span>,<span class="number">2</span>%%date:~<span class="number">8</span>,<span class="number">2</span>%%time:~<span class="number">0</span>,<span class="number">2</span>%%time:~<span class="number">3</span>,<span class="number">2</span>%%time:~<span class="number">6</span>,<span class="number">2</span>%            <span class="comment">#设置计算机名变量</span></div><div class="line">wmic computersystem where <span class="string">"name='%computername%'"</span> call rename <span class="string">"%name%"</span>                      <span class="comment">#修改计算机名</span></div><div class="line">schtasks /DELETE /TN <span class="string">"RENAME"</span> /F    <span class="comment">#删除计划rename任务</span></div><div class="line">del /q <span class="string">"%cd%\rename.bat"</span>            <span class="comment">#删除当前文件</span></div><div class="line">shutdown -r -t <span class="number">00</span>                   <span class="comment">#重启系统</span></div></pre></td></tr></table></figure>
+
+<p>2.保存为批处理(*.bat)文件，此文件是利用定时计划任务(RENAME)修改计算机名，执行完成后删除计划任务。</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://kayil.com/2014/11/18/2011-05-11/" data-id="bvu74n6y25kpcbdp" class="article-share-link">Share</a>
+      <a data-url="http://kayil.com/2015/01/08/修改计算机名/" data-id="bv8kb8g7yt8434vn" class="article-share-link">Share</a>
       
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/流浪的风/">流浪的风</a></li></ul>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/windows/">windows</a></li></ul>
 
     </footer>
   </div>
@@ -115,19 +121,10 @@
     
 <nav id="article-nav">
   
-    <a href="/2014/11/18/2011-02-03/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          2011-02-03
-        
-      </div>
-    </a>
   
-  
-    <a href="/2014/11/18/2012-01-10/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2015/01/08/修改远程桌面端口/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">2012-01-10</div>
+      <div class="article-nav-title">修改远程桌面端口</div>
     </a>
   
 </nav>
@@ -138,7 +135,7 @@
 
   <section id="comments">
     <!-- 多说评论框 start -->
-    <div class="ds-thread" data-thread-key="post-2011-05-11" data-title="2011-05-11" data-url="http://kayil.com/2014/11/18/2011-05-11/"></div>
+    <div class="ds-thread" data-thread-key="post-修改计算机名" data-title="修改计算机名" data-url="http://kayil.com/2015/01/08/修改计算机名/"></div>
     <!-- 多说评论框 end -->
     <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
     <script type="text/javascript">
