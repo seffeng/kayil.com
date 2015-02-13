@@ -3,17 +3,17 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Category: windows | 峰雪幽忧 -- kayil.com</title>
+  <title>javascript页面宽度高度 | 峰雪幽忧 -- kayil.com</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="kayil.com,域名出售,domain sale">
-<meta property="og:type" content="website">
-<meta property="og:title" content="峰雪幽忧 -- kayil.com">
-<meta property="og:url" content="http://kayil.com/categories/windows/">
+  <meta name="description" content="网页可见区域宽：document.body.clientWidth网页可见区域高：document.body.clientHeight网页可见区域宽：document.body.offsetWidth(包括边线的宽)网页可见区域高：document.body.offsetHeight(包括边线的宽)网页正文全文宽：document.body.scrollWidth网页正文全文高：document.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="javascript页面宽度高度">
+<meta property="og:url" content="http://kayil.com/2015/02/13/javascript页面宽度高度/">
 <meta property="og:site_name" content="峰雪幽忧 -- kayil.com">
-<meta property="og:description" content="kayil.com,域名出售,domain sale">
+<meta property="og:description" content="网页可见区域宽：document.body.clientWidth网页可见区域高：document.body.clientHeight网页可见区域宽：document.body.offsetWidth(包括边线的宽)网页可见区域高：document.body.offsetHeight(包括边线的宽)网页正文全文宽：document.body.scrollWidth网页正文全文高：document.">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="峰雪幽忧 -- kayil.com">
-<meta name="twitter:description" content="kayil.com,域名出售,domain sale">
+<meta name="twitter:title" content="javascript页面宽度高度">
+<meta name="twitter:description" content="网页可见区域宽：document.body.clientWidth网页可见区域高：document.body.clientHeight网页可见区域宽：document.body.offsetWidth(包括边线的宽)网页可见区域高：document.body.offsetHeight(包括边线的宽)网页正文全文宽：document.body.scrollWidth网页正文全文高：document.">
 
   
   <meta name="baidu-site-verification" content="PhQawcNsUr" />
@@ -74,18 +74,12 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-修改计算机名" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-javascript页面宽度高度" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2015/01/08/修改计算机名/" class="article-date">
-  <time datetime="2015-01-08T06:03:16.000Z" itemprop="datePublished">Jan 8 2015</time>
+    <a href="/2015/02/13/javascript页面宽度高度/" class="article-date">
+  <time datetime="2015-02-13T07:53:13.000Z" itemprop="datePublished">Feb 13 2015</time>
 </a>
     
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/windows/">windows</a>
-  </div>
-
   </div>
   <div class="article-inner">
     
@@ -93,8 +87,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/01/08/修改计算机名/">修改计算机名</a>
+    <h1 class="article-title" itemprop="name">
+      javascript页面宽度高度
     </h1>
   
 
@@ -102,135 +96,53 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>1.新建文本文件，编辑内容</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">set</span> name=test-%date:~<span class="number">2</span>,<span class="number">2</span>%%date:~<span class="number">5</span>,<span class="number">2</span>%%date:~<span class="number">8</span>,<span class="number">2</span>%%time:~<span class="number">0</span>,<span class="number">2</span>%%time:~<span class="number">3</span>,<span class="number">2</span>%%time:~<span class="number">6</span>,<span class="number">2</span>%            <span class="comment">#设置计算机名变量</span></div><div class="line">wmic computersystem where <span class="string">"name='%computername%'"</span> call rename <span class="string">"%name%"</span>                      <span class="comment">#修改计算机名</span></div><div class="line">schtasks /DELETE /TN <span class="string">"RENAME"</span> /F    <span class="comment">#删除计划rename任务</span></div><div class="line">del /q <span class="string">"%cd%\rename.bat"</span>            <span class="comment">#删除当前文件</span></div><div class="line">shutdown -r -t <span class="number">00</span>                   <span class="comment">#重启系统</span></div></pre></td></tr></table></figure>
-
-<p>2.保存为批处理(*.bat)文件，此文件是利用定时计划任务(RENAME)修改计算机名，执行完成后删除计划任务。</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://kayil.com/2015/01/08/修改计算机名/" data-id="9dea3goeiygmyfy4" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/windows/">windows</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-修改远程桌面端口" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2015/01/08/修改远程桌面端口/" class="article-date">
-  <time datetime="2015-01-08T06:02:18.000Z" itemprop="datePublished">Jan 8 2015</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/windows/">windows</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/01/08/修改远程桌面端口/">修改远程桌面端口</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>修改远程桌面端口需要两个步骤：<br>1、打开注册表 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Terminal Server\Wds\rdpwd\Tds\tcp]，修改右边PortNamber的值，其默认值是3389，修改成所希望的端口即可，例如3309</p>
-<p>2、再打开注册表 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentContro1Set\Control\Tenninal Server\WinStations\RDP-Tcp]，修改右边PortNamber的值，其默认值是3389，修改成所希望的端口即可，例如3309<br>修改完后需要重启生效，注意防火墙的问题！</p>
+        <p>网页可见区域宽：document.body.clientWidth<br>网页可见区域高：document.body.clientHeight<br>网页可见区域宽：document.body.offsetWidth(包括边线的宽)<br>网页可见区域高：document.body.offsetHeight(包括边线的宽)<br>网页正文全文宽：document.body.scrollWidth<br>网页正文全文高：document.body.scrollHeight</p>
+<p>网页被卷去的高：document.body.scrollTop(IE7无效)<br>网页被卷去的左：document.body.scrollLeft(IE7无效)<br>网页被卷去的高：document.documentElement.scrollTop(IE7有效)<br>网页被卷去的左：document.documentElement.scrollLeft(IE7有效)</p>
+<p>网页正文部分上：window.screenTop<br>网页正文部分左：window.screenLeft<br>屏幕分辨率的高：window.screen.height<br>屏幕分辨率的宽：window.screen.width<br>屏幕可用工作区高度：window.screen.availHeight<br>屏幕可用工作区宽度：window.screen.availWidth</p>
+<p>相对于窗口左上角的X：window.event.clientX<br>相对于窗口左上角的Y：window.event.clientY<br>相对于整个页面的X：window.event.X<br>相对于整个页面的Y：window.event.Y</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://kayil.com/2015/01/08/修改远程桌面端口/" data-id="nrzflalkcm2ioua8" class="article-share-link">Share</a>
+      <a data-url="http://kayil.com/2015/02/13/javascript页面宽度高度/" data-id="4l0f0gnoej9dax5w" class="article-share-link">Share</a>
       
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/windows/">windows</a></li></ul>
-
     </footer>
   </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2015/01/08/修改计算机名/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">修改计算机名</div>
+    </a>
+  
+</nav>
+
   
 </article>
 
 
-  
-    <article id="post-ipsec" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2015/01/08/ipsec/" class="article-date">
-  <time datetime="2015-01-08T03:50:27.000Z" itemprop="datePublished">Jan 8 2015</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/windows/">windows</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/01/08/ipsec/">ipsec-IP安全策略</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>控制面板\所有控制面板项\管理工具 &gt;&gt; 本地安全策略 &gt;&gt; IP 安全策略,在本地计算机</p>
-<p>1、删除所有策略</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">netsh ipsec static delete all</div></pre></td></tr></table></figure>
-
-<p>2、创建IP安全策略（名称=ipsec）</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">netsh ipsec static add policy name=ipsec</div></pre></td></tr></table></figure>
-
-<p>3、是否指派该 IPSec 策略（只能指派一个 IPSec 策略）</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">netsh ipsec static <span class="keyword">set</span> policy name=ipsec assign=yes|no</div></pre></td></tr></table></figure>
-
-<p>4、添加IP筛选列表</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">netsh ipsec static add filterlist name=<span class="string">"acp_tcp"</span></div></pre></td></tr></table></figure>
-
-<p>5、添加筛选器操作</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">netsh ipsec static add filteraction name=<span class="string">"acc_tcp"</span> action=<span class="string">"permit"</span>（允许）</div><div class="line">netsh ipsec static add filteraction name=<span class="string">"drop_tcp"</span> action=<span class="string">"block"</span>（阻止）</div></pre></td></tr></table></figure>
-
-<p>6、将筛选器添加到指定的筛选器列表</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">netsh ipsec static add filter filterlist=<span class="string">"acc_tcp"</span> srcaddr=me dstaddr=<span class="number">42.120</span>.<span class="number">184.4</span> protocol=TCP dstport=<span class="number">80</span> dstmask=<span class="number">24</span> description=<span class="string">"user.taobao.com"</span></div></pre></td></tr></table></figure>
-
-<p>7、用指定的筛选器列表和筛选器操作创建一个规则</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">netsh ipsec static add rule name=<span class="string">"yunxu"</span> policy=ipsec filterlist=acp_tcp filteraction=acp_tcp</div><div class="line">netsh ipsec static add rule name=<span class="string">"zuzhi"</span> policy=ipsec filterlist=drop_tcp filteraction=drop_tcp</div></pre></td></tr></table></figure>
-
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://kayil.com/2015/01/08/ipsec/" data-id="y6f1f9l1hj9okqiy" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/windows/">windows</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-  
+  <section id="comments">
+    <!-- 多说评论框 start -->
+    <div class="ds-thread" data-thread-key="post-javascript页面宽度高度" data-title="javascript页面宽度高度" data-url="http://kayil.com/2015/02/13/javascript页面宽度高度/"></div>
+    <!-- 多说评论框 end -->
+    <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+    <script type="text/javascript">
+    var duoshuoQuery = {short_name:'kayil'};
+      (function() {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';ds.async = true;
+        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0] 
+         || document.getElementsByTagName('body')[0]).appendChild(ds);
+      })();
+      </script>
+    <!-- 多说公共JS代码 end -->
+  </section>
 </section>
         
           <aside id="sidebar">
