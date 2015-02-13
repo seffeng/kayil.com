@@ -1,0 +1,18 @@
+<div id="totop" style="display: block; opacity: 1;">
+    <a title="返回顶部"><img src="/css/images/scrollup.png"></a>
+</div>
+<%- js('js/totop') %>
+<footer id="footer">
+  <% if (theme.sidebar === 'bottom'){ %>
+    <%- partial('_partial/sidebar') %>
+  <% } %>
+  <div class="outer">
+    <a href="http://118456.com/" target="_blank">118456.com</a>
+    <a style="margin-left:10px; margin-right:10px;" href="http://1kmi.com/" target="_blank">1kmi.com</a>
+    <a href="http://kayil.com/" target="_blank">kayil.com</a>
+    <div id="footer-info" class="inner">
+      &copy; <%= date(new Date(), 'YYYY') %> <%= config.author || config.title %><br>
+      <a href="mailto:<%= config.email %>"><%= config.email %></a><br>
+    </div>
+  </div>
+</footer>

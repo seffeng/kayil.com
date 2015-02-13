@@ -1,0 +1,35 @@
+<%- partial('_partial/head') %>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <%- partial('_partial/header', null, {cache: !config.relative_link}) %>
+      <div class="outer">
+        <section id="main"><%- body %></section>
+        <% if (theme.sidebar && theme.sidebar !== 'bottom'){ %>
+          <%- partial('_partial/sidebar', null, {cache: !config.relative_link}) %>
+        <% } %>
+      </div>
+      <%- partial('_partial/footer', null, {cache: !config.relative_link}) %>
+    </div>
+    <%- partial('_partial/mobile-nav', null, {cache: !config.relative_link}) %>
+    <%- partial('_partial/after-footer') %>
+  </div>
+  <div style="display:none">
+    <script src="http://s95.cnzz.com/stat.php?id=1253138512&web_id=1253138512" language="JavaScript"></script>
+    <script type="text/javascript">
+        var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+        document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F3cb40d1453cfe520a52dd2118cba3ac9' type='text/javascript'%3E%3C/script%3E"));
+        $(document).ready(function(){
+            //显示返回顶部
+            $(window).scroll(function(){
+                if($('html').scrollTop() > 100 || $('body').scrollTop() > 100){
+                    $('#scrollUp').show();
+                }else{
+                    $('#scrollUp').hide();
+                }
+            });
+        });
+    </script>
+  </div>
+</body>
+</html>
